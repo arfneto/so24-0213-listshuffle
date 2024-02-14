@@ -124,7 +124,6 @@ int so_sort_nodes(List* list, int (*cmp)(void*, void*))
         for (int j = 0; j < list->size - i - 1; j += 1)
         {
             Node* one = so_locate_at(list, j);
-
             if ( cmp((void*)one, (void*)one->next) < 0)
                 so_swap_info(one, one->next);
         }

@@ -9,7 +9,6 @@ int so_cmp_info_artist(void* a, void* b);
 
 int main(void)
 {
-    int      seed    = 240212;  // for rand()
     List*    my_list = so_create_list();
     unsigned N       = 9;  // 9 records on sample data
     for (unsigned i = 0; i < N; i += 1)
